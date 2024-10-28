@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    padding: 14px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 17px;
+}
+
+.nav-links a {
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.nav-links a:hover {
+    color: #608BC1;
+}
+
+.phone-number a {
+    color: #333;
+    font-size: 20px;
+    background-color: #608BC1;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.nav-links .phone-number a:hover {
+    color: #91f3f5;
+}
+
+/* Top Image */
+.top-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 0px;
+}
+
+.top-img img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* You can adjust this to set the maximum height */
+    object-fit: cover;
+    opacity: 80%;
+}
+
+/* Text Overlay on Image */
+.image-text {
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+}
+
+.image-text h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.image-text h3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Tint Overlay */
+.image-tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black tint with 40% opacity */
+    z-index: 1; /* Place the tint above the image but below the text */
+}
+
+.image-text {
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2; /* Place text above the tint */
+}
+
+/* Container for product display */
+.product-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background-color: #f5f5f5; /* Light grey background */
+}
+
+/* Content on the left side */
+.product-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+/* Heading styles */
+.product-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Highlighting "WHEELS" text */
+.product-content .highlight {
+    color: #4b4b7c;
+}
+
+/* Paragraph text */
+.product-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Download button */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009de0; /* Blue background */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
+
+/* Images section */
+.product-images {
+    display: flex;
+    gap: 10px;
+    width: 45%;
+}
+
+.product-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.foot {
+    background-color: #1e1e28;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Column */
+.footer-column {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: "▸";
+    color: #007bff;
+    font-size: 18px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+/* Footer Text */
+.footer-column p {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+/* Links Styling */
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Contact Information */
+.contact-info li {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.verified-badge {
+    margin-top: 20px;
+    max-width: 100px;
+}
+
+/* Footer Column Spacing */
+.footer-container .footer-column:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .image-text h1 {
+        font-size: 36px;
+    }
+    .image-text h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px;
+    }
+    .nav-links a {
+        font-size: 18px;
+    }
+    .phone-number a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .image-text h1 {
+        font-size: 28px;
+    }
+    .image-text h3 {
+        font-size: 16px;
+    }
+}
