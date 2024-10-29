@@ -877,7 +877,7 @@ body {
 /* Responsive styles for mobile (screens up to 480px) */
 @media (max-width: 480px) {
     .navbar {
-        padding: 8px;
+        padding: 10px;
     }
     .nav-links a {
         font-size: 18px;
