@@ -8,6 +8,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Optional: Other loader styles */
+}
+
 /* From Uiverse.io by Praashoo7 */ 
 .l {
     color: black;
@@ -949,5 +957,10 @@ body {
         font-size: 32px;
         color: #1a1a1a;
         margin-bottom: 0px;
+    }
+    .content {
+        text-align: center;
+        z-index: 1;
+        padding: 10px;
     }
 }
