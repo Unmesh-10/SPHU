@@ -1,9 +1,13 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 .loader {
     position: absolute;
     top: 50%;
@@ -122,12 +126,6 @@
     }
 }
 
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Navbar */
 .navbar-container {
     width: 100%;
     height: 85px;
@@ -186,130 +184,104 @@ body {
     color: #91f3f5;
 }
 
-/* Top Image */
-.top-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    max-width: 100%;
-    margin-top: 0px;
-}
-
-.top-img img {
-    width: 100%;
-    height: auto;
-    max-height: 300px; /* You can adjust this to set the maximum height */
-    object-fit: cover;
-    opacity: 80%;
-}
-
-/* Text Overlay on Image */
-.image-text {
-    position: absolute;
-    color: #ffffff;
+.contact-content {
     text-align: center;
+    padding: 40px;
+    color: #333;
 }
 
-.image-text h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+.contact-content h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
-.image-text h3 {
-    font-family: "Roboto Mono", monospace;
-    font-size: 24px;
+.contact-content p {
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-style: normal;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 40px;
 }
 
-/* Tint Overlay */
-.image-tint {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Black tint with 40% opacity */
-    z-index: 1; /* Place the tint above the image but below the text */
+.contact-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.image-text {
-    position: absolute;
-    color: #ffffff;
+.contact-box {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h3 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.contact-box p {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95em;
+    color: #202020;
+    margin: 15px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #0066ff;
+    font-weight: bold;
+    border: 1px solid #0066ff;
+    border-radius: 4px;
+    text-decoration: none;
     text-align: center;
-    z-index: 2; /* Place text above the tint */
 }
 
-        /* Main product container */
-        #Product {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 100px;
-            justify-content: center;
-            padding: 25px;
-            background-color: #f4f4f4;
-        }
+.contact-button:hover {
+    background-color: #0066ff;
+    color: #fff;
+}
 
-        /* Individual product card */
-        .product-card {
-            width: 300px;
-            background-color: white;
-            border: 1px solid #e0e0e0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            text-align: center;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
+.contact-label {
+    width: 4px;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
 
-        /* Add hover effect */
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
+.sales-label {
+    background-color: #00a676;
+}
 
-        /* Image style */
-        .product-card img {
-            width: 100%;
-            height: auto;
-        }
+.support-label {
+    background-color: #ff5a5a;
+}
 
-        /* Product details */
-        .product-details {
-            padding: 15px;
-        }
+.media-label {
+    background-color: #00a676;
+}
 
-        .product-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px 0;
-        }
+.partnerships-label {
+    background-color: #ff5a5a;
+}
 
-        .product-description {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        /* Read More button */
-        .read-more {
-            background-color: #00aaff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            transition: background-color 0.2s;
-        }
-
-        .read-more:hover {
-            background-color: #0077cc;
-        }
 
 /* Footer Container */
 .foot {
@@ -393,43 +365,6 @@ body {
     margin-right: 30px;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-column {
-        margin-bottom: 20px;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-links li {
-        margin: 10px 0;
-    }
-    .logo img {
-        height: 40px;
-    }
-    .image-text h1 {
-        font-size: 36px;
-    }
-    .image-text h3 {
-        font-size: 18px;
-    }
-}
-
 /* Hamburger Icon */
 .hamburger {
     display: none;
@@ -457,7 +392,6 @@ body {
     color: #333;
     font-size: 18px;
     border-bottom: 1px solid #e0e0e0;
-    text-decoration: none;
 }
 
 .mobile-nav a:hover {
@@ -506,28 +440,19 @@ body {
     .product-card {
         width: 100%;
     }
-}
-
-@media (max-width: 480px) {
-    .image-text h1 {
-        font-size: 28px;
-    }
-    .image-text h3 {
-        font-size: 16px;
-    }
-    #Product {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-        padding: 25px;
-        background-color: #f4f4f4;
-    }
     .footer-container {
         display: block;
         justify-content: space-between;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
+    }
+    .testimonial-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px;
     }
 }

@@ -12,18 +12,43 @@
 </head>
 <body>
 
+    <div class="loader">
+        <span class="l">L</span>
+        <span class="o">o</span>
+        <span class="a">a</span>
+        <span class="d">d</span>
+        <span class="i">i</span>
+        <span class="n">n</span>
+        <span class="g">g</span>
+        <span class="d1">.</span>
+        <span class="d2">.</span>
+    </div>
+
+<div class="Main-for-loading" style="display: none;">
+
     <div class="navbar-container">
         <div class="navbar">
             <div class="logo">
-                <a href="../index.html"><img src="../logo/logo-1.webp" alt="Company Logo"></a>
+                <img src="../logo/logo-1.webp" alt="Logo">
             </div>
+            <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./PCD-inserts.html">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="phone-number"><a href="tel:7242181603">For Call - +91-9822279973</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product-info">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="phone-number"><a href="tel:+91-9822279973">Call Us - +91-9822279973</a></li>
             </ul>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="../index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#product-info">Products</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:+91-9822279973" class="phone-number">Call Us - +91-9822279973</a>
+            </div>
         </div>
     </div>
 
@@ -198,7 +223,23 @@
             </div>
         </div>
     </footer>
+
+</div>
     
 
 </body>
+<script>
+    window.addEventListener("load", function() {
+        // Hide the loader and show the content
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".Main-for-loading").style.display = "block";
+    });
+</script>
+
+<script>
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+    }
+</script>
 </html>
