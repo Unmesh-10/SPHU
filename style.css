@@ -140,12 +140,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 3px;
+    height: 60px;
 }
 
 .logo img {
-    height: 50px;
+    height: 75px;
     width: auto;
-    margin-top: 5px;
 }
 
 .nav-links {
@@ -172,16 +172,17 @@ body {
 }
 
 .phone-number a {
-    color: #333;
     font-size: 20px;
-    background-color: #608BC1;
+    background-color: white;
     border-radius: 20px;
     padding: 15px;
-    color: white;
+    color: #ED6a5a;
+    border: 2px solid #ED6a5a;
 }
 
 .nav-links .phone-number a:hover {
-    color: #91f3f5;
+    color: white;
+    background-color: #ED6a5a;
 }
 
 .container {
@@ -200,10 +201,11 @@ body {
 }
 
 .content h1 {
-    font-family: "Lato", sans-serif;
-    font-size: 90px; 
-    font-weight: 700;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
+    font-size: 90px;
     color: #fff;
     margin-bottom: 50px;
 }
@@ -275,17 +277,28 @@ body {
 }
 
 .welcome-section h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #0073b7;
-    font-size: 28px;
+    font-size: 45px;
     margin-bottom: 5px;
-    font-weight: normal;
+}
+.grey-1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #454546;
+    font-size: 45px;
+    margin-bottom: 5px;
 }
 
 .welcome-section h1 {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none;
     font-size: 40px;
-    font-weight: bold;
     margin-bottom: 30px;
     color: #222;
 }
@@ -302,6 +315,9 @@ body {
 }
 
 .left-column p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     line-height: 1.8;
     margin-bottom: 20px;
     color: #444;
@@ -347,6 +363,9 @@ body {
 }
 
 .right-column p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     line-height: 1.8;
     color: #333;
 }
@@ -377,19 +396,19 @@ body {
 .product {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f8fafc; /* Light grey background for professional look */
+    background-color: #e5e5e5; /* Light grey background for professional look */
 }
 
 .product h2 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 25px;
-    color: #1f274c; /* Dark color for heading */
+    color: #080707; /* Dark color for heading */
 }
 
 .product p {
-    font-size: 16px;
-    color: #555555;
+    font-size: 19px;
+    color: #005a91;
     margin-bottom: 40px;
 }
 
@@ -402,7 +421,8 @@ body {
 
 .product-card {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    box-shadow: 20px 0px 1px rgb(0 0 0 / 10%);
     border-radius: 10px;
     padding: 20px;
     width: 300px; /* Card width */
@@ -415,6 +435,7 @@ body {
     height: auto;
     margin-bottom: 20px;
     border-radius: 5px; /* Slightly rounded corners */
+    border: 2px solid black;
 }
 
 .product-card h3 {
@@ -836,6 +857,7 @@ body {
 @media (max-width: 768px) {
     .navbar {
         padding: 10px;
+        height: 50px;
     }
     .nav-links {
         flex-direction: column;
@@ -845,7 +867,8 @@ body {
         margin: 10px 0;
     }
     .logo img {
-        height: 40px;
+        height: 70px;
+        margin-top: 20px;
     }
     .content h1 {
         font-size: 50px;
